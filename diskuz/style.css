@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+   
+  body {
+      background-color: rgb(220, 220, 220);
+    margin: 20px auto;
+    font-family: "Lato";
+    font-weight: 300;
+  }
+   
+  form {
+    padding: 15px 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+   
+  form label {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+   
+  input {
+    font-family: "Lato";
+  }
+   
+  a {
+    color: #0000ff;
+    text-decoration: none;
+  }
+   
+  a:hover {
+    text-decoration: underline;
+  }
+   
+  #wrapper,
+  #loginform {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    width: 600px;
+    max-width: 100%;
+    border: 2px solid #9A5AA4;
+    border-radius: 4px;
+  }
+   
+  #loginform {
+    padding-top: 18px;
+    text-align: center;
+  }
+   
+  #loginform p {
+    padding: 15px 25px;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+   
+  #chatbox {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 10px;
+    background: #fff;
+    height: 420px;
+    width: 320px;
+    border: 1px solid #9A5AA4;
+    overflow: auto;
+    border-radius: 5px;
+    border-bottom: 4px solid #9A5AA4;
+        background-image: url("https://i.imgur.com/8JSbTWT.png");
+
+  }
+   
+  #usermsg {
+    flex: 1;
+    border-radius: 4px;
+    border: 1px solid #fff;
+  }
+   
+  #name {
+    border-radius: 4px;
+    border: 1px solid #fff;
+    padding: 2px 8px;
+  }
+   
+  #submitmsg,
+  #enter{
+ text-decoration: none;
+			font-family:".LucidaGrandeUI", "Lucida Grande", "Lucida sans unicode";
+			color: black;
+			font-size: 11px;
+			padding: 1px 7px;
+			border:1px solid #9C9C9C;
+			margin: 2px 2px;
+			display: inline-block;
+			background-image: -webkit-linear-gradient(
+			#ffffff 0%, #F6F6F6 	30%, 
+			#F3F3F3 45%, #EDEDED 	60%, 
+			#eeeeee 100%);
+			border-radius: 3px;
+			cursor: pointer, default;
+			box-shadow: 0px 0px 1px rgba(0,0,0,0.20);
+		}
+		.osxbutton:active {
+		 	border-color:#705ebb;
+			background-image:-webkit-linear-gradient(
+			#acc5e9 0%, 		#a3c0f2 18%, 
+			#61a0ed 39%,		#55a3f2 70%, 
+			#82c2f1 91.72%, 	#9AD2F2 100%); 
+			box-shadow: 0px 0px 1px rgba(0,0,0,0.65);	
+			cursor: pointer, default;
+
+		}
+		.osxbutton.disabled {
+			color: #999!important;
+			background-image: -webkit-linear-gradient(#fbf8f8 0%, #f0f0f0 30%, #e3e3e3 45%, #d7d7d7 60%, #cbc9c9 100%);
+					cursor: pointer, default;
+
+  }
+   
+  .error {
+    color: #ff0000;
+  }
+   
+  #menu {
+    padding: 15px 25px;
+    display: flex;
+  }
+   
+  #menu p.welcome {
+    flex: 1;
+  }
+   
+  a#exit {
+    text-decoration: none;
+			font-family:".LucidaGrandeUI", "Lucida Grande", "Lucida sans unicode";
+			color: black;
+			font-size: 11px;
+			padding: 1px 7px;
+			border:1px solid #9C9C9C;
+			margin: 2px 2px;
+			display: inline-block;
+			background-image: -webkit-linear-gradient(
+			#ffffff 0%, #F6F6F6 	30%, 
+			#F3F3F3 45%, #EDEDED 	60%, 
+			#eeeeee 100%);
+			border-radius: 3px;
+			box-shadow: 0px 0px 1px rgba(0,0,0,0.20);
+						cursor: pointer, default;
+
+		}
+		.osxbutton:active {
+		 	border-color:#705ebb;
+			background-image:-webkit-linear-gradient(
+			#acc5e9 0%, 		#a3c0f2 18%, 
+			#61a0ed 39%,		#55a3f2 70%, 
+			#82c2f1 91.72%, 	#9AD2F2 100%); 
+			box-shadow: 0px 0px 1px rgba(0,0,0,0.65);		
+		}
+		.osxbutton.disabled {
+			color: #999!important;
+			background-image: -webkit-linear-gradient(#fbf8f8 0%, #f0f0f0 30%, #e3e3e3 45%, #d7d7d7 60%, #cbc9c9 100%);
+		
+  }
+   
+  .msgln {
+    margin: 0 0 5px 0;
+  }
+   
+  .msgln span.left-info {
+    color: #9A5AA4;
+  }
+   
+  .msgln span.chat-time {
+    color: #666;
+    font-size: 60%;
+    vertical-align: super;
+  }
+   
+  .msgln b.user-name, .msgln b.user-name-left {
+    font-weight: bold;
+    background: #546e7a;
+    color: white;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+  }
+   
+  .msgln b.user-name-left {
+    background: orangered;
+  }
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+.prvni {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	color: rgb(98, 7, 7);
+}
+#druhynadpis{
+	color: rgb(98, 7, 7);
+	font-family: sans-serif;
+	font-size: 25px;
+}
+.novinky{
+	font-size: 17px;
+}
+.forma1{
+	padding: 15px;
+	width: 150px;
+	text-align: center;
+	background-color: tomato;
+	color: black;
+	font-size: 17px;
+}
+.tlacitkdo{
+	background-color: #75B200;
+	padding: 6px;
+	transition-duration: 0,4s;
+}
+.tlacitkdo:hover{
+	background-color: #008370;
+	transition-duration: 0.4s;
+	color: white;
+}
+.tlacitkdo:active{
+	background-color: #008343;
+	box-shadow: 0 3px #666;
+	transform: translateY(4px);
+	transition-duration: 0.6s;
+}
+
+.rozvodntlacitko{
+	background-color: #0F7101;
+	color: white;
+	transition-duration: 0.3s;
+	width: 150px;
+}
+.rozvodntlacitko:hover{
+	background-color: rgb(202, 111, 30);
+	color: black;
+	transition-duration: 0.3s;
+}
+.rozvodntlacitko:active{
+	background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

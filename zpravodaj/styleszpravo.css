@@ -1,0 +1,160 @@
+  .enterx{
+ text-decoration: none;
+			font-family:".LucidaGrandeUI", "Lucida Grande", "Lucida sans unicode";
+			color: black;
+			font-size: 11px;
+			padding: 1px 7px;
+			border:1px solid #9C9C9C;
+			margin: 2px 2px;
+			display: inline-block;
+			background-image: -webkit-linear-gradient(
+			#ffffff 0%, #F6F6F6 	30%, 
+			#F3F3F3 45%, #EDEDED 	60%, 
+			#eeeeee 100%);
+			border-radius: 3px;
+			box-shadow: 0px 0px 1px rgba(0,0,0,0.20);
+			cursor: pointer, default;
+
+		}
+		.osxbutton:active {
+		 	border-color:#705ebb;
+			background-image:-webkit-linear-gradient(
+			#acc5e9 0%, 		#a3c0f2 18%, 
+			#61a0ed 39%,		#55a3f2 70%, 
+			#82c2f1 91.72%, 	#9AD2F2 100%); 
+			box-shadow: 0px 0px 1px rgba(0,0,0,0.65);		
+		}
+		.osxbutton.disabled {
+			color: #999!important;
+			background-image: -webkit-linear-gradient(#fbf8f8 0%, #f0f0f0 30%, #e3e3e3 45%, #d7d7d7 60%, #cbc9c9 100%);
+		
+		}
+		
+		:root {
+    --red: rgb(209, 3, 3);
+    --white: #fff;
+    --black: #000;
+}.btn {
+    width: 200px; height: 88px;
+    outline: 0;
+    border: 2px solid #ccc;
+    color: #000;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.05);
+    transition: 1.5s cubic-bezier(.21,.04,.26,.99);
+}.btn:hover {
+    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.2);
+    border-color: var(--red);
+}.btn-like {
+    padding: 1.5rem 1.5rem 1.5rem 6rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    background: #fff;
+    transition: 1.5s cubic-bezier(.21,.04,.26,.99);
+}
+.btn-like.liked {
+    background: var(--red);
+    border-color: var(--red);
+}/*-- Button Icon -- */
+.btn-icon {
+    display: inline-block;
+    width: 32px;
+    height: 36px;
+    position: absolute;
+    left: 1.5rem;
+    transition: 1s cubic-bezier(.21,.04,.26,.99);
+    transform: rotate(0deg)
+}
+.btn:hover .btn-icon {
+    color: var(--red);
+}
+.btn.liked:hover .btn-icon {
+    color: var(--black);
+}
+.liked .btn--icon-default {
+    transform: rotate(-90deg)
+}
+.btn:not(.liked).btn--icon-liked {
+    transform: rotate(-90deg)
+}
+.liked .btn--icon-default,
+.btn--icon-liked {
+    opacity: 0;
+    color: #fff;
+    position: absolute;
+}
+.btn--icon-default,
+.liked .btn--icon-liked {
+    opacity: 1;
+    left: 1.5rem;
+}/*-- Button Content -- */
+.btn-content {
+    transition: transform 0.1s ease;
+    display: inline-block;
+    /* position: absolute;
+    right: 0; */
+}
+.liked .btn-content {
+    color: var(--white);
+}
+.btn:hover.liked .btn-content {
+    color: var(--black);
+}
+.btn:not(.liked) .btn-content--liked {
+    transform: translate(110px)
+}
+.btn:not(.liked) .btn-content--default {
+    transform: translate(-56px)
+}
+.liked .btn-content--default {
+    transform: translate(24px)
+}
+#diskuznadpis{
+    text-align: center;
+    font-family: georgia ;
+    font-size: 26px;
+}
+.diskuzclanek{ 
+    background-color:  #e3e0e2 ;
+    color: black;
+    padding: 15px;
+    width: 50%;
+    height: 100px;
+    overflow: scroll;
+    border: 1px solid #ccc;
+    overflow-x: hidden;
+    text-align: center;
+    justify-content: center;
+}
+.diskuzclanek:hover{
+    background-color:  #dbd7da;
+}
+.divdiskuz{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+.diskuztlacitkonahoru{
+    background-color: rgb(213, 216, 220);
+    color: black;
+    width: 150px;
+    padding: 8px 18px;
+     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+     font-size: 14px;
+     margin: 3px 1px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.diskuztlacitkonahoru:hover{
+    background-color: #d3c25a;
+}
+.diskuztlacitkonahoru:active{
+    background-color:  #a59849 ;
+}
